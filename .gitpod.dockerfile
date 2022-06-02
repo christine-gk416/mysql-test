@@ -36,6 +36,9 @@ ENV PYTHONUSERBASE=/workspace/.pip-modules \
     PIP_USER=yes
 ENV PATH=$PYTHONUSERBASE/bin:$PATH
 
+# Test mysql documentation
+FROM gitpod/workspace-mysql
+
 # Setup Heroku CLI
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 
